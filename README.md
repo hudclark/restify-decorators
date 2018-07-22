@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/hudclark/restify-decorators.svg?branch=master)](https://travis-ci.org/hudclark/restify-decorators)
 # Restify Decorators
 Typescript decorators for quickly creating Restify controllers.
 
