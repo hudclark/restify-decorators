@@ -1,0 +1,41 @@
+{
+  "name": "restify-decorators",
+  "version": "0.0.1",
+  "description": "Simple decorators for Restify",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha --require ts-node/register -r ts-node/register ./test/*.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hudclark/restify-decorators.git"
+  },
+  "keywords": [
+    "restify"
+  ],
+  "author": "Hudson Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hudclark/restify-decorators/issues"
+  },
+  "homepage": "https://github.com/hudclark/restify-decorators#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/chai-http": "^3.0.5",
+    "@types/mocha": "^5.2.5",
+    "@types/restify": "^7.2.3",
+    "@types/restify-errors": "^4.3.3",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0",
+    "restify": "^7.2.1",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "restify-errors": "^6.1.1"
+  }
+}
