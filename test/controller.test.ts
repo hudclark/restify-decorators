@@ -1,10 +1,8 @@
-`use strict`
-
 import 'mocha'
 import * as chai from 'chai'
 import * as restify from 'restify'
 import DummyController from './dummy-controller'
-import { registerController } from '../dist/index'
+import { registerControllers } from '../dist/index'
 
 const chaiHttp = require('chai-http')
 const chaiAsPromised = require('chai-as-promised')
@@ -29,7 +27,10 @@ describe ('controller', () => {
         server.use(restify.plugins.bodyParser());
 
         const controller = new DummyController('foo')
-        registerController(server, controller, authenticator)
+
+        registerControllers(server)
+            .withAuthenticator(authenticator)
+            .addController(controller)
 
         server.listen(done)
     })
