@@ -39,6 +39,8 @@ function registerController(server, controller, authenticator) {
             register.call(server, fullPath, ...route.middleware, handler);
         }
     });
+    // Free up some memory
+    delete controller.__controller_raw_routes;
 }
 exports.registerController = registerController;
 function cleanRoute(rawRoute) {

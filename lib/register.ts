@@ -52,6 +52,9 @@ export function registerController (server: Server, controller: any, authenticat
             register.call(server, fullPath, ...route.middleware, handler)
         }
     })
+
+    // Free up some memory
+    delete controller.__controller_raw_routes
 }
 
 function cleanRoute (rawRoute: IRawRoute): IRoute {
