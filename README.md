@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/hudclark/restify-decorators.svg?branch=master)](https://travis-ci.org/hudclark/restify-decorators)
+
+[![NPM](https://nodei.co/npm/restify-decorators.png)](https://nodei.co/npm/<package>/)
 # Restify Decorators
 Typescript decorators for quickly creating Restify controllers.
 
